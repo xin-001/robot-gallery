@@ -19,7 +19,7 @@ const App: React.FC = (props) => {
   const [error, setError] = useState<string>()
 
   useEffect(() => {
-    document.title = `点击${count}次`;
+    document.title = `click ${count} times`;
   }, [count]);
 
   useEffect(() => {
@@ -61,7 +61,7 @@ const App: React.FC = (props) => {
       </button>
       <span>count: {count}</span>
       <ShoppingCart />
-      {(!error || error !== "") && <div>网站出错：{error}</div>}
+      {(!error || error !== "") && <div>error：{error}</div>}
       {!loading ? (
         <div className={styles.robotList}>
           {robotGallery.map((r) => (
@@ -69,7 +69,7 @@ const App: React.FC = (props) => {
           ))}
         </div>
       ) : (
-        <h2>loading 加载中</h2>
+        <h2>loading...</h2>
       )}
     </div>
   );
