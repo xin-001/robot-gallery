@@ -52,14 +52,7 @@ const App: React.FC = (props) => {
           Funny robot online shopping
         </h1>
       </div>
-      <button
-        onClick={() => {
-          setCount(count + 1);
-        }}
-      >
-        Click
-      </button>
-      <span>count: {count}</span>
+    
       <ShoppingCart />
       {(!error || error !== "") && <div>error：{error}</div>}
       {!loading ? (
