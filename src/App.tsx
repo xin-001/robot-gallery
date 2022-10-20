@@ -10,7 +10,7 @@ interface Props {}
 interface State {
   robotGallery: any[];
   count: number;
-}
+} 
 
 const App: React.FC = (props) => {
   const [count, setCount] = useState<number>(0);
